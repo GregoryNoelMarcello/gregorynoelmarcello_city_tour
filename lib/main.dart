@@ -38,21 +38,26 @@ class MyHomePage extends State<MyHomePage> {
               .of(context)
               .colorScheme
               .inversePrimary,
-          title Text(widget.title),
+          title: Text(widget.title),
     ),
     body: Padding(
     padding: const EdgeInsets.all(8.0),
     child: Column(
     children: [
-
-    Container(
+      Container(
       color: Colors. blue,
-      height: 200, padding: EdgeInsets.all(16),
+      height: 200,
+      padding: EdgeInsets.all(16),
       margin: EdgeInsets.all(16),
-      child : Center('Explore the charm of our cits hidden gems and embark on a journey to dicover the rich cultural heritage, breathtaking landscapes, and unique experiences that await you From historic landmarks to vibrant markets and serene natural wonders, our city offers a tapestry of experiences that will captivate your senses. Join us in exploring the beauty of our city and create memories that will last a lifetime. Come and visit our citys treasures today.'
-
+      child : Center(
+        child :Text('Explore the charm of our cits hidden gems and embark on a journey to dicover the rich cultural heritage, breathtaking landscapes, and unique experiences that await you From historic landmarks to vibrant markets and serene natural wonders, our city offers a tapestry of experiences that will captivate your senses. Join us in exploring the beauty of our city and create memories that will last a lifetime. Come and visit our citys treasures today.'
+    style: TextStyle(fontSize: 15, color: Colors.black)
     ),
     )
+    )
+    Padding(
+      padding: EdgeInsets.all(16.0),
+      child: image.asset(gambar/peta1.jpg,gambar/peta2.jpg, gambar/peta3.jpg, gambar/peta4.jpg,)
     )
   }
 }
