@@ -57,7 +57,10 @@ class MyHomePage extends State<MyHomePage> {
     )
     Padding(
       padding: EdgeInsets.all(16.0),
-      child: image.asset(gambar/peta1.jpg,gambar/peta2.jpg, gambar/peta3.jpg, gambar/peta4.jpg,)
+      child: image.asset(gambar/peta1.jpg,gambar/peta2.jpg, gambar/peta3.jpg, gambar/peta4.jpg,
+        Size.fromHeight(300),
+        Size.fromWidth(150),
+    )
     )
   }
 }
